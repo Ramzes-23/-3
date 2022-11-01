@@ -1,0 +1,24 @@
+function EnterRandom(n, m) {
+    let ran = [];
+    let count = 50;
+
+    for (let i = n; i < count; i++) {
+        ran.push(Math.round(Math.random() * n));
+        //return ran;
+
+    }
+    console.log(ran);
+}
+EnterRandom(n, m);
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+    //Максимум не включается, минимум включается
+}
+
+getRandomInt(n, m);
+console.log(getRandomInt);
+
+//console.log(EnterRandom);
